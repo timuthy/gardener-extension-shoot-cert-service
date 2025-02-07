@@ -21,7 +21,7 @@ require (
 	k8s.io/code-generator v0.31.5
 	k8s.io/component-base v0.31.5
 	k8s.io/utils v0.0.0-20241210054802-24370beab758
-	sigs.k8s.io/controller-runtime v0.19.4
+	sigs.k8s.io/controller-runtime v0.19.5
 )
 
 require (
@@ -147,3 +147,5 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.3 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
+
+replace github.com/gardener/gardener => github.com/timuthy/gardener v0.0.0-20250207102934-7f0628fb3a8e

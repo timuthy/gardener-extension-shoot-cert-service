@@ -1,0 +1,11 @@
+apiVersion: operator.gardener.cloud/v1alpha1
+kind: Extension
+metadata:
+  name: extension-shoot-cert-service
+spec:
+  resources:
+  - kind: Extension
+    type: shoot-cert-service
+    workerlessSupported: true
+
+  

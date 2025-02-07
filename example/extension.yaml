@@ -1,0 +1,16 @@
+apiVersion: operator.gardener.cloud/v1alpha1
+kind: Extension
+metadata:
+  name: extension-shoot-cert-service
+spec:
+  deployment:
+    extension:
+      helm:
+        ociRepository:
+          ref: europe-docker.pkg.dev/gardener-project/releases/gardener/extensions/shoot-cert-service:v1.49.0-dev
+      runtimeClusterValues: {}
+      values: {}
+  resources:
+  - kind: Extension
+    type: shoot-cert-service
+    workerlessSupported: true
